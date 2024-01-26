@@ -1,0 +1,46 @@
+Implement options
+  default bet
+  default amount of money
+  default bet increase and decrease
+
+
+*****New Defects
+1. While I am drawing cards it is showing the minimum bet but 
+seems to be playing the correct bet (fixed; test)
+
+2. Is showing the hint enumeration
+
+*****Old Defects
+1. Play sound (done, add more sounds)
+2. Can bet below $0 (test some more)
+  Can't double if balance would equal 0; should be able to bet to 0
+  Make sure we can't split if we don't have enough money
+  
+3. Speed up initialization - perhaps make shuffle a fast sort or asynchronous
+4. Hit space with no game playing causes an unhandled exception 
+  (seems to be fixed; refactor so this works in the library as opposed to logic in GUI)
+
+5. Doesn't seem to pay winnings or subtract losses on splits (Done)
+Make back of card configurable and animated
+Make player hands spread equally across bottom of screen (done)
+Keep track of cards dealt, hands played, bets made, and graphic wins and losses
+  validate player responses against hints
+Three splits: 9, 9, 9 wasn't able to double on the last hand and had plenty of money to do so.(done)
+  ***Can't double after split
+Verify splits are being played right
+Modify it to enable or disable hints
+Add a notification to indicate when shuffling
+Gave me a double message after more than two cards were dealt
+Bad GetBestValue
+  Ace Five Ace Five caculated to 22. This should be 12.
+Write surrender test
+Implement save and load game
+  save players, hands, money, and deck
+  
+Write tests to test various hand combinations explicitly and verify payouts
+  Choose dealer hand
+  Choose player hands
+    single
+    double
+    split and double
+    split and blackjack

@@ -1,0 +1,202 @@
+﻿html
+{
+  overflow: auto;
+}
+
+html, body, #form1 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: maroon;
+  box-sizing: border-box;
+}
+
+.Content {
+  width: 100%;
+  /*height: 84%;*/
+  box-sizing: border-box;
+  /*border: 2px red solid;*/
+  display:table;
+}
+
+.Navigator {
+  height: 80%;
+  width:20%;
+  box-sizing: border-box;
+  /*border: 2px solid white;*/
+  display:table-cell;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.Navigator table:first-child
+{
+  padding-bottom: 4px;
+}
+
+.About
+{
+  width: 100%;
+  height: 100%;
+  border: 1px inset silver;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+}
+
+.AboutContent
+{
+  height: 85%;
+  box-sizing: border-box;
+  
+}
+
+.About img
+{
+  float: right;
+}
+
+.Hints span, .Statistics span, .About span
+{
+  display:table-row;
+  height: 25px;
+}
+
+.Main {
+  height: 80%;
+  width:80%;
+  box-sizing: border-box;
+  /*border: 2px solid white;*/
+  display:table-cell;
+}
+
+.Hands {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  /*border: 4px solid black;*/
+}
+
+.Card
+{
+  border-radius: 10px;
+}
+
+.Dealer {
+  height: 35%;
+  width: 100%;
+  box-sizing: border-box;
+  /*border: 4px solid white;*/
+}
+
+.Player {
+  height: 65%;
+  width: 100%;
+  box-sizing: border-box;
+  /*border: 4px solid white;*/
+}
+
+.Dealer img {
+  display: block;
+  margin: 50px auto;
+  
+}
+
+.Player table
+{
+    margin: 50px auto;
+}
+
+.Dealer img:hover, .PlayerHand img:hover {
+    box-shadow: 0 0 5px 5px #DDDDDD;
+}
+
+.PlayerHand{
+    display: block;
+    padding-right: 20px;
+    margin: 50px auto;
+}
+
+
+header {
+  width: 100%;
+  height: 10%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.TopHeader
+{
+  background-position: right top; 
+  height:80%; 
+  background-image: url('../BlackJack/Images/graphic.jpg'); 
+  background-repeat: repeat-x; 
+  background-attachment: fixed; 
+  text-align:center;
+}
+
+.AboutPopup
+{
+  box-shadow: 5px 5px 5px 0px gray;
+}
+
+.Logo
+{
+  border: 1px groove black; 
+  border-image: none; 
+  font-family: castellar; 
+  font-size: 44px; 
+  background-color: white;
+}
+
+.BottomHeader
+{
+  height: 20%;
+  background-color: #272626;
+  border-bottom: 2px solid #800000;
+}
+
+footer {
+  width: 100%;
+  height: 5%;
+  box-sizing: border-box;
+  background-color: black;
+  background: linear-gradient(whitesmoke, gray, black, black, black, black);
+  background: -moz-linear-gradient(whitesmoke, gray, black, black, black, black);
+  background: -o-linear-gradient(whitesmoke, gray, black, black, black, black);
+  bottom: 0px;
+  position: fixed;
+}
+
+
+footer div
+{
+  height: 100%;
+  box-sizing: border-box;
+}
+
+footer table
+{
+  border-image: none; 
+  width: 100%; 
+  height: 100%; 
+  border-collapse: separate; 
+  border-spacing: 2px;
+  background-color: transparent;
+  height: 100%;
+}
+
+footer table td
+{
+  border: 1px inset black;
+  padding-left: 8px;
+  
+}
+
+footer table td:hover
+{
+  background: linear-gradient(cadetblue, black, cadetblue);
+  
+}
+
